@@ -63,7 +63,7 @@
                 @if(!empty($blok['buttons']))
                     <div class="flex flex-wrap gap-4 mt-8 {{ $textAlignment === 'center' ? 'justify-center' : '' }}">
                         @foreach($blok['buttons'] as $button)
-                            <x-storyblok-component :blok="$button" />
+                            <x-storyblok::component :blok="$button" />
                         @endforeach
                     </div>
                 @endif
@@ -83,7 +83,7 @@
                     @if(!empty($blok['buttons']))
                         <div class="flex flex-wrap gap-4 mt-8">
                             @foreach($blok['buttons'] as $button)
-                                <x-storyblok-component :blok="$button" />
+                                <x-storyblok::component :blok="$button" />
                             @endforeach
                         </div>
                     @endif
