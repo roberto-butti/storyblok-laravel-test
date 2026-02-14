@@ -1,6 +1,6 @@
-<x-layouts.app
+<x-storyblok-layout
     :title="$story['content']['meta_title'] ?? $story['name']"
     :metaDescription="$story['content']['meta_description'] ?? null"
 >
     <x-storyblok::component :blok="$story['content']" />
-</x-layouts.app>
+</x-storyblok-layout>
